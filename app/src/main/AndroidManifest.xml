@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AppPersonasUCN"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsertUserActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
     </application>
