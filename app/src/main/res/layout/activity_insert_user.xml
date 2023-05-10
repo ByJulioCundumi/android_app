@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/insert_userCounterId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/insert_firstNameId"
         android:layout_width="320dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/insert_lastNameId"
         android:layout_width="319dp"
         android:layout_height="58dp"
         android:layout_marginTop="8dp"
@@ -82,10 +82,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/insert_firstNameId" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/insert_emailId"
         android:layout_width="316dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -96,10 +96,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/insert_ageId" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/insert_passwordId"
         android:layout_width="314dp"
         android:layout_height="64dp"
         android:layout_marginTop="8dp"
@@ -110,22 +110,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/insert_emailId" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/insert_save_btn"
         android:layout_width="132dp"
         android:layout_height="54dp"
         android:layout_marginTop="36dp"
+        android:onClick="saveUser"
         android:text="Guardar"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/insert_passwordId" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/insert_ageId"
         android:layout_width="315dp"
         android:layout_height="56dp"
         android:layout_marginTop="8dp"
@@ -136,15 +137,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/insert_lastNameId" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/insert_back_btn"
         android:layout_width="91dp"
         android:layout_height="50dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="44dp"
+        android:onClick="insertToMain"
         android:text="Volver"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/insert_save_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

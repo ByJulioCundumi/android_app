@@ -4,10 +4,22 @@ import java.util.*;
 
 public class UserList {
 
-    public static List<User> userList = new ArrayList<>();
+    private static List<User> userList = new ArrayList<>();
 
     public static void addUser(User user) {
         userList.add(user);
+    }
+
+    public static int getUserCount(){
+        if(userList.size() == 0){
+            return 0;
+        }else{
+            return userList.size();
+        }
+    }
+
+    public static List<User> getUserList(){
+        return userList;
     }
 
     public static User getUserByEmail(String email) {
