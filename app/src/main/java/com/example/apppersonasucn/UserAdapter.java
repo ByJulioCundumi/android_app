@@ -1,6 +1,7 @@
 package com.example.apppersonasucn;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             private TextView email;
             //
             private Button btnDelete;
+            private Button btnDetails;
 
             public ViewHolder(View view) {
                 super(view);
@@ -37,6 +39,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 email = (TextView) view.findViewById(R.id.user_item_emailId);
                 //
                 btnDelete = (Button) view.findViewById(R.id.user_item_btn_deleteId);
+                btnDetails = (Button) view.findViewById(R.id.user_item_btn_detailsId);
             }
 
         }
@@ -71,6 +74,21 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
                     // Recrea la actividad para recargar la pantalla
                     ((Activity) v.getContext()).recreate();
+                }
+            });
+
+            // Configurar el clic del botón de consultar
+            viewHolder.btnDetails.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Acciones a realizar cuando se hace clic en el botón de eliminar
+                    Intent intent = new Intent(v.getContext(), UserDetails.class);
+
+                    // Agregar los datos del objeto User como extras en el Intent
+                    intent.putExtra("userData", user);
+
+                    // Iniciar el nuevo Activity
+                    v.getContext().startActivity(intent);
                 }
             });
         }
