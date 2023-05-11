@@ -21,6 +21,7 @@ public class InsertUserActivity extends AppCompatActivity {
     private EditText email;
     private EditText password;
     private TextView userCounter;
+    private TextView averageAge;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +33,12 @@ public class InsertUserActivity extends AppCompatActivity {
         age = (EditText) findViewById(R.id.insert_ageId);
         email = (EditText) findViewById(R.id.insert_emailId);
         password = (EditText) findViewById(R.id.insert_passwordId);
+        //
         userCounter = (TextView) findViewById(R.id.insert_userCounterId);
+        averageAge = (TextView) findViewById(R.id.insert_averageAgeId);
+        //
         userCounter.setText(String.valueOf(UserList.getUserCount()));
+        averageAge.setText(String.valueOf(UserList.getAverageAge()));
     }
 
     public void insertToMain(View view){
@@ -76,6 +81,7 @@ public class InsertUserActivity extends AppCompatActivity {
                 UserList.addUser(user);
                 Toast.makeText(this, "Se registró un nuevo usuario exitosamente :)", Toast.LENGTH_SHORT).show();
                 userCounter.setText(String.valueOf(UserList.getUserCount()));
+                averageAge.setText(String.valueOf(UserList.getAverageAge()));
             }
         }
     }

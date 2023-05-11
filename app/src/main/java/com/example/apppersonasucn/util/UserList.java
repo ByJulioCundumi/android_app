@@ -18,6 +18,18 @@ public class UserList {
         }
     }
 
+    public static double getAverageAge() {
+        int totalAge = 0;
+        for (User user : userList) {
+            totalAge += user.getAge();
+        }
+        if (userList.size() > 0) {
+            return (double) totalAge / userList.size();
+        } else {
+            return 0;
+        }
+    }
+
     public static List<User> getUserList(){
         return userList;
     }
