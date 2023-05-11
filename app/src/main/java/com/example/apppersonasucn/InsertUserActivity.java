@@ -3,6 +3,7 @@ package com.example.apppersonasucn;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.Toast;
 
 import com.example.apppersonasucn.entity.User;
 import com.example.apppersonasucn.util.UserList;
+
+import java.util.Objects;
 
 public class InsertUserActivity extends AppCompatActivity {
 
@@ -27,6 +30,8 @@ public class InsertUserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert_user);
+        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue)));
+
 
         firstName = (EditText) findViewById(R.id.insert_firstNameId);
         lastName = (EditText) findViewById(R.id.insert_lastNameId);

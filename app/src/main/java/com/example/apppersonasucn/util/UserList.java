@@ -23,8 +23,10 @@ public class UserList {
         for (User user : userList) {
             totalAge += user.getAge();
         }
+
         if (userList.size() > 0) {
-            return (double) totalAge / userList.size();
+            double averageAge = (double) totalAge / userList.size();
+            return Math.round(averageAge * 10.0) / 10.0;
         } else {
             return 0;
         }
