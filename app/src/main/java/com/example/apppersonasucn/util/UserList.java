@@ -52,6 +52,10 @@ public class UserList {
         }
     }
 
+    public static void updateUser(int index, User user){
+        userList.set(index, user);
+    }
+
     public static void deleteUser(User user) {
         userList.remove(user);
     }

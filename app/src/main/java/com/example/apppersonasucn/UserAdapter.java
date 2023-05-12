@@ -29,6 +29,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             //
             private Button btnDelete;
             private Button btnDetails;
+            private Button btnEdit;
 
             public ViewHolder(View view) {
                 super(view);
@@ -40,6 +41,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 //
                 btnDelete = (Button) view.findViewById(R.id.user_item_btn_deleteId);
                 btnDetails = (Button) view.findViewById(R.id.user_item_btn_detailsId);
+                btnEdit = (Button) view.findViewById(R.id.user_item_btn_editId);
             }
 
         }
@@ -91,9 +93,24 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                     v.getContext().startActivity(intent);
                 }
             });
+
+            viewHolder.btnEdit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Acciones a realizar cuando se hace clic en el botón de editar
+                    Intent intent = new Intent(v.getContext(), UpdateUserActivity.class);
+
+                    // Agregar los datos del objeto User como extras en el Intent
+                    intent.putExtra("userData", user);
+                    intent.putExtra("position", UserList.getUserList().indexOf(user));
+
+                    // Iniciar el nuevo Activity
+                    v.getContext().startActivity(intent);
+                }
+            });
         }
 
-        // Return the size of your dataset (invoked by the layout manager)
+        // Return the size of dataset
         @Override
         public int getItemCount() {
             return userList.size();

@@ -10,51 +10,27 @@
         android:id="@+id/toolbar3"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@android:color/holo_blue_light"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
-        android:text="Usuarios Rgistrados"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/update_counterId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="16dp"
-        android:text="0"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="252dp"
         android:layout_height="44dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="48dp"
         android:text="Actualizar Datos"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#3F51B5"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/update_firstNameId"
@@ -116,6 +92,8 @@
         android:layout_width="132dp"
         android:layout_height="54dp"
         android:layout_marginTop="36dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:onClick="updateBtn"
         android:text="Guardar"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -143,8 +121,57 @@
         android:layout_height="50dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="28dp"
+        android:backgroundTint="@android:color/holo_blue_light"
         android:onClick="updateToMain"
         android:text="Volver"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_btn_save" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Usuarios:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/toolbar3"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3" />
+
+    <TextView
+        android:id="@+id/update_userCounterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:text="Edad Promedio:"
+        android:textColor="#FFFDFD"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/update_userCounterId"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3" />
+
+    <TextView
+        android:id="@+id/update_userAverageAgeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
