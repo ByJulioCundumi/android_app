@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/registerPasswordId"
         android:layout_width="301dp"
         android:layout_height="46dp"
         android:layout_marginTop="12dp"
@@ -29,10 +29,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/registerEmailId" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/registerEmailId"
         android:layout_width="301dp"
         android:layout_height="46dp"
         android:layout_marginTop="80dp"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/registerVerifyPasswordId"
         android:layout_width="301dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
@@ -53,7 +53,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordId" />
 
     <Button
         android:id="@+id/registerBtnId"
@@ -61,13 +61,14 @@
         android:layout_height="53dp"
         android:layout_marginTop="48dp"
         android:backgroundTint="@android:color/holo_blue_light"
+        android:onClick="saveUser"
         android:text="Guardar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/registerVerifyPasswordId" />
 
     <Button
         android:id="@+id/registerBackBtnId"
@@ -76,6 +77,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="108dp"
         android:backgroundTint="@android:color/holo_blue_light"
+        android:onClick="registerToLogin"
         android:text="Volver"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20sp"

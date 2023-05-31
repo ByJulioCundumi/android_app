@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="363dp"
-        android:layout_height="244dp"
+        android:layout_width="375dp"
+        android:layout_height="371dp"
         android:layout_marginTop="52dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,6 +127,23 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobbies:"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_details_hobbies_id"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16sp" />
+
     </LinearLayout>
 
     <TextView
@@ -145,8 +162,8 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
         android:backgroundTint="@android:color/holo_blue_light"
         android:onClick="userDetailsToMainActivity"
         android:text="Volver"

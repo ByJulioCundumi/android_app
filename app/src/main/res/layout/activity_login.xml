@@ -49,13 +49,13 @@
         android:id="@+id/loginBtnId"
         android:layout_width="163dp"
         android:layout_height="59dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="56dp"
         android:backgroundTint="@android:color/holo_blue_light"
+        android:onClick="loginBtn"
         android:text="Iniciar Sesion"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginPasswordId" />
 
@@ -66,6 +66,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="124dp"
         android:backgroundTint="@android:color/holo_blue_light"
+        android:onClick="loginToRegister"
         android:text="Registrarse"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20sp"

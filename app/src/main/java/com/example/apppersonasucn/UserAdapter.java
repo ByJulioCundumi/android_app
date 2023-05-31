@@ -1,6 +1,7 @@
 package com.example.apppersonasucn;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,6 +31,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             private Button btnDelete;
             private Button btnDetails;
             private Button btnEdit;
+            private Button btnHobbies;
 
             public ViewHolder(View view) {
                 super(view);
@@ -42,6 +44,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 btnDelete = (Button) view.findViewById(R.id.user_item_btn_deleteId);
                 btnDetails = (Button) view.findViewById(R.id.user_item_btn_detailsId);
                 btnEdit = (Button) view.findViewById(R.id.user_item_btn_editId);
+                btnHobbies = (Button) view.findViewById(R.id.user_item_btn_hobbies);
             }
 
         }
@@ -101,6 +104,23 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                     Intent intent = new Intent(v.getContext(), UpdateUserActivity.class);
 
                     // Agregar los datos del objeto User como extras en el Intent
+                    intent.putExtra("userData", user);
+                    intent.putExtra("position", UserList.getUserList().indexOf(user));
+
+                    // Iniciar el nuevo Activity
+                    v.getContext().startActivity(intent);
+                }
+            });
+
+            viewHolder.btnHobbies.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Acciones a realizar cuando se hace clic en el botón de hobbies
+                    Dialog hobbiesPopUp = new Dialog(v.getContext());
+                    hobbiesPopUp.setContentView(R.layout.activity_hobbies);
+
+                    // Agregar los datos del objeto User como extras en el Intent
+                    Intent intent = new Intent(v.getContext(), hobbiesActivity.class);
                     intent.putExtra("userData", user);
                     intent.putExtra("position", UserList.getUserList().indexOf(user));
 

@@ -103,7 +103,9 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:backgroundTint="@android:color/holo_blue_light"
-                android:text="Consultar" />
+                android:text="Consultar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/user_item_btn_editId"
@@ -111,7 +113,9 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:backgroundTint="@android:color/holo_orange_light"
-                android:text="Editar" />
+                android:text="Editar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/user_item_btn_deleteId"
@@ -119,7 +123,19 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:backgroundTint="@android:color/holo_red_light"
-                android:text="Eliminar" />
+                android:text="Eliminar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/user_item_btn_hobbies"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="Hobbies"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

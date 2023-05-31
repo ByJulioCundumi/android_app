@@ -51,4 +51,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, InsertUserActivity.class);
         startActivity(i);
     }
+
+    public void mainToStatistics(View view){
+        Intent i = new Intent(this, StatisticsActivity.class);
+        startActivity(i);
+    }
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ public class UserDetails extends AppCompatActivity {
     private TextView password;
     private TextView userCounter;
     private TextView averageAge;
+    private TextView hobbies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class UserDetails extends AppCompatActivity {
         password = (TextView) findViewById(R.id.user_details_passwordId);
         userCounter = (TextView) findViewById(R.id.user_details_counterId);
         averageAge = (TextView) findViewById(R.id.user_details_averageAgeId);
+        hobbies = (TextView) findViewById(R.id.user_details_hobbies_id);
         //
         userCounter.setText(String.valueOf(UserList.getUserCount()));
         averageAge.setText(String.valueOf(UserList.getAverageAge()));
@@ -49,6 +52,12 @@ public class UserDetails extends AppCompatActivity {
             age.setText(String.valueOf(user.getAge()));
             email.setText(user.getEmail());
             password.setText(user.getPassword());
+            if(user.getHobbies().isEmpty()){
+                hobbies.setText("El usuario" + " " + user.getFirstName() + " " + user.getLastName() + ", " + "no tiene hobbies registrados :(");
+            } else{
+                String hobbiesText = TextUtils.join(", ", user.getHobbies());
+                hobbies.setText(hobbiesText);
+            }
         } else {
             Toast.makeText(this, "Hubo un error y no llegaron los datos :(", Toast.LENGTH_SHORT).show();
         }

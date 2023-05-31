@@ -1,6 +1,8 @@
 package com.example.apppersonasucn.entity;
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 public class User implements Serializable {
     private String firstName;
@@ -8,6 +10,7 @@ public class User implements Serializable {
     private int age;
     private String email;
     private String password;
+    private Set<String> ListaHobbies = new HashSet<>();
 
     public User(){
 
@@ -59,6 +62,14 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public void addHobby(String hobby) {
+        ListaHobbies.add(hobby);
+    }
+
+    public Set<String> getHobbies() {
+        return this.ListaHobbies;
     }
 
     @Override

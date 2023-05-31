@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".hobbiesActivity">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Registra un Hobbie"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/hobbiesEatId"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="12dp"
+        android:buttonTint="@android:color/holo_blue_light"
+        android:text="Comer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbiesExerciceId" />
+
+    <CheckBox
+        android:id="@+id/hobbiesWalkId"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_blue_light"
+        android:text="Caminar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbiesEatId" />
+
+    <CheckBox
+        android:id="@+id/hobbiesCookId"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="60dp"
+        android:buttonTint="@android:color/holo_blue_light"
+        android:text="Cocinar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <CheckBox
+        android:id="@+id/hobbiesExerciceId"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="12dp"
+        android:buttonTint="@android:color/holo_blue_light"
+        android:text="Ejercicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbiesCookId" />
+
+    <CheckBox
+        android:id="@+id/hobbiesSleepId"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:buttonTint="@android:color/holo_blue_light"
+        android:text="Dormir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbiesReadId" />
+
+    <CheckBox
+        android:id="@+id/hobbiesStudyId"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="84dp"
+        android:buttonTint="@android:color/holo_blue_light"
+        android:text="Estudiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbiesDanceId" />
+
+    <CheckBox
+        android:id="@+id/hobbiesDanceId"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="84dp"
+        android:buttonTint="@android:color/holo_blue_light"
+        android:text="Bailar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <CheckBox
+        android:id="@+id/hobbiesReadId"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="84dp"
+        android:buttonTint="@android:color/holo_blue_light"
+        android:text="Leer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbiesStudyId" />
+
+    <Button
+        android:id="@+id/hobbiesSaveBtnId"
+        android:layout_width="137dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="296dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:onClick="saveHobbies"
+        android:text="Guardar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/hobbiesBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:onClick="hobbiesToMain"
+        android:text="Volver"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbiesSaveBtnId" />
+</androidx.constraintlayout.widget.ConstraintLayout>
