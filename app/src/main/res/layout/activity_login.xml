@@ -6,14 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="414dp"
+        android:layout_height="733dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_1" />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:text="Login"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +36,7 @@
         android:layout_width="314dp"
         android:layout_height="49dp"
         android:layout_marginTop="60dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Email: email@gmail.com"
         android:inputType="textEmailAddress"
@@ -37,6 +50,7 @@
         android:layout_width="314dp"
         android:layout_height="49dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Contraseña: ejemplo123"
         android:inputType="textPassword"
@@ -50,10 +64,11 @@
         android:layout_width="163dp"
         android:layout_height="59dp"
         android:layout_marginTop="56dp"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:backgroundTint="@color/black"
         android:onClick="loginBtn"
         android:text="Iniciar Sesion"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,11 +80,13 @@
         android:layout_height="52dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="124dp"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:backgroundTint="@color/black"
         android:onClick="loginToRegister"
         android:text="Registrarse"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtnId" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

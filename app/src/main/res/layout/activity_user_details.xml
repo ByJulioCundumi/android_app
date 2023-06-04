@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".UserDetails">
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="416dp"
+        android:layout_height="730dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_1" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="375dp"
@@ -134,7 +145,8 @@
             android:text="Hobbies:"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="20sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/user_details_hobbies_id"
@@ -152,7 +164,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Detalles del usuario"
-        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -162,9 +175,9 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/black"
         android:onClick="userDetailsToMainActivity"
         android:text="Volver"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
@@ -176,7 +189,7 @@
         android:id="@+id/toolbar2"
         android:layout_width="439dp"
         android:layout_height="58dp"
-        android:background="@android:color/holo_blue_light"
+        android:background="@android:color/holo_blue_dark"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -230,4 +243,6 @@
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView18"
         app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

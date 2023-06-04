@@ -7,6 +7,16 @@
     android:textAlignment="center"
     tools:context=".hobbiesActivity">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="413dp"
+        android:layout_height="732dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_1" />
+
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
@@ -14,6 +24,7 @@
         android:layout_marginTop="92dp"
         android:text="Registra un Hobbie"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +36,7 @@
         android:layout_height="38dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="12dp"
-        android:buttonTint="@android:color/holo_blue_light"
+        android:buttonTint="@color/white"
         android:text="Comer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hobbiesExerciceId" />
@@ -36,7 +47,7 @@
         android:layout_height="38dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="8dp"
-        android:buttonTint="@android:color/holo_blue_light"
+        android:buttonTint="@color/white"
         android:text="Caminar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hobbiesEatId" />
@@ -47,7 +58,7 @@
         android:layout_height="38dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="60dp"
-        android:buttonTint="@android:color/holo_blue_light"
+        android:buttonTint="@color/white"
         android:text="Cocinar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -58,7 +69,7 @@
         android:layout_height="38dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="12dp"
-        android:buttonTint="@android:color/holo_blue_light"
+        android:buttonTint="@color/white"
         android:text="Ejercicio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hobbiesCookId" />
@@ -69,7 +80,7 @@
         android:layout_height="38dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="84dp"
-        android:buttonTint="@android:color/holo_blue_light"
+        android:buttonTint="@color/white"
         android:text="Dormir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hobbiesReadId" />
@@ -80,7 +91,7 @@
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="84dp"
-        android:buttonTint="@android:color/holo_blue_light"
+        android:buttonTint="@color/white"
         android:text="Estudiar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hobbiesDanceId" />
@@ -91,7 +102,7 @@
         android:layout_height="38dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="84dp"
-        android:buttonTint="@android:color/holo_blue_light"
+        android:buttonTint="@color/white"
         android:text="Bailar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -102,7 +113,7 @@
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="84dp"
-        android:buttonTint="@android:color/holo_blue_light"
+        android:buttonTint="@color/white"
         android:text="Leer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hobbiesStudyId" />
@@ -112,7 +123,7 @@
         android:layout_width="137dp"
         android:layout_height="49dp"
         android:layout_marginTop="296dp"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:backgroundTint="@color/black"
         android:onClick="saveHobbies"
         android:text="Guardar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -127,11 +138,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginTop="76dp"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:backgroundTint="@color/black"
         android:onClick="hobbiesToMain"
         android:text="Volver"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hobbiesSaveBtnId" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
