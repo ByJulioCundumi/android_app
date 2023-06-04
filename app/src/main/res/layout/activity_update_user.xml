@@ -14,13 +14,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_1" />
+        app:srcCompat="@drawable/img" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@android:color/holo_blue_light"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +35,7 @@
         android:text="Actualizar Datos"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -106,7 +106,7 @@
         android:layout_width="132dp"
         android:layout_height="54dp"
         android:layout_marginTop="36dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@android:color/holo_blue_light"
         android:onClick="updateBtn"
         android:text="Guardar"
         android:textSize="16sp"
@@ -136,7 +136,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="28dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@android:color/holo_blue_light"
         android:onClick="updateToMain"
         android:text="Volver"
         app:layout_constraintStart_toStartOf="parent"

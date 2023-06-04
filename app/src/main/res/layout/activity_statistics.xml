@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_1" />
+        app:srcCompat="@drawable/img" />
 
     <TextView
         android:id="@+id/textView17"
@@ -24,7 +24,7 @@
         android:text="Estadisticas de Pasatiempos por usuario"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -83,7 +83,7 @@
                 android:layout_weight="1"
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
         </LinearLayout>
 
         <LinearLayout
@@ -127,7 +127,7 @@
                 android:layout_weight="1"
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
         </LinearLayout>
 
         <LinearLayout
@@ -171,7 +171,7 @@
                 android:layout_weight="1"
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
         </LinearLayout>
 
         <LinearLayout
@@ -215,7 +215,7 @@
                 android:layout_weight="1"
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
         </LinearLayout>
     </LinearLayout>
 
@@ -225,7 +225,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@android:color/holo_blue_light"
         android:onClick="statisticsToMain"
         android:text="Volver"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"

@@ -3,6 +3,7 @@ package com.example.apppersonasucn;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -10,6 +11,8 @@ import android.widget.Toast;
 
 import com.example.apppersonasucn.entity.User;
 import com.example.apppersonasucn.util.UserList;
+
+import java.util.Objects;
 
 public class hobbiesActivity extends AppCompatActivity {
 
@@ -21,6 +24,7 @@ public class hobbiesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hobbies);
+        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue)));
         //
         cook = (CheckBox) findViewById(R.id.hobbiesCookId);
         exercise = (CheckBox) findViewById(R.id.hobbiesExerciceId);

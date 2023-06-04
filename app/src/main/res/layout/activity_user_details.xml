@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_1" />
+        app:srcCompat="@drawable/img" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -145,7 +145,7 @@
             android:text="Hobbies:"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
         <TextView
@@ -164,7 +164,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Detalles del usuario"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -177,7 +177,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@android:color/holo_blue_light"
         android:onClick="userDetailsToMainActivity"
         android:text="Volver"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
@@ -189,7 +189,7 @@
         android:id="@+id/toolbar2"
         android:layout_width="439dp"
         android:layout_height="58dp"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@android:color/holo_blue_light"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
